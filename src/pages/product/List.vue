@@ -114,7 +114,7 @@ export default {
         },       
 
         toAddHandler(){
-            this.title="添加员工信息";
+            this.title="添加产品信息";
             this.visible=true;
         },
 
