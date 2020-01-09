@@ -18,7 +18,7 @@
     </el-table>
      <!-- 表格结束 -->
                 <!-- 分页开始 -->
-     <el-pagination layout="prev, pager, next" :total="50"></el-pagination>
+     <!-- <el-pagination layout="prev, pager, next" :total="50"></el-pagination> -->
         <!-- 分页结束 -->
   
 <!-- 模态框 -->
@@ -154,7 +154,7 @@ export default {
 
     created(){
       // this为当前vue实例对象
-    //vue实例创建完毕
+    //ue实例创建完毕
     this.loadData()
     }
 }

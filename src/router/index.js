@@ -83,6 +83,8 @@ export const constantRoutes = [
     ]
   },
 
+ 
+
   {
     path: '/product',
     component: Layout,
@@ -92,6 +94,45 @@ export const constantRoutes = [
         name: 'ProductList',
         component: () => import('@/pages/product/List'),
         meta: { title: '产品管理', icon: 'tree' }
+      }
+    ]
+  },
+
+  {
+    path: '/employeecheck',
+    component: Layout,
+    children: [
+      {
+        path: 'List',
+        name: 'EmployeecheckList',
+        component: () => import('@/pages/employeecheck/List'),
+        meta: { title: '员工审核', icon: 'tree' }
+      }
+    ]
+  },
+
+  {
+    path: '/moneycheck',
+    component: Layout,
+    children: [
+      {
+        path: 'List',
+        name: 'MoneycheckList',
+        component: () => import('@/pages/moneycheck/List'),
+        meta: { title: '提现审核', icon: 'tree' }
+      }
+    ]
+  },
+
+  {
+    path: '/order',
+    component: Layout,
+    children: [
+      {
+        path: 'List',
+        name: 'OrderList',
+        component: () => import('@/pages/order/List'),
+        meta: { title: '订单管理', icon: 'tree' }
       }
     ]
   },
